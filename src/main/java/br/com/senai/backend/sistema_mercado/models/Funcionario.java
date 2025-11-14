@@ -21,7 +21,7 @@ public class Funcionario {
     @Column(name="id")
     private Integer id;
     @Column(name="nome")
-    private Integer nome;
+    private String nome;
     @Column(name="cpf")
     private String cpf;
     @Column(name="cargo")
@@ -40,7 +40,7 @@ public class Funcionario {
     public Funcionario() {
     }
 
-    public Funcionario(Integer id, Integer nome, String cpf, String cargo, LocalDate dataNascimento,
+    public Funcionario(Integer id, String nome, String cpf, String cargo, LocalDate dataNascimento,
             List<Mercadoria> mercadorias) {
         this.id = id;
         this.nome = nome;
@@ -58,11 +58,11 @@ public class Funcionario {
         this.id = id;
     }
 
-    public Integer getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(Integer nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 

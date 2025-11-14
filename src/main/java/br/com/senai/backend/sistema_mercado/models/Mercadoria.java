@@ -17,7 +17,7 @@ public class Mercadoria {
     @Column(name="preco")
     private double preco;
     @Column(name="quantidade")
-    private String quantidade;
+    private Integer quantidade;
     @Column(name="nome")
     private String nome;
     @Column(name="categoria")
@@ -26,7 +26,7 @@ public class Mercadoria {
     public Mercadoria() {
     }
 
-    public Mercadoria(Integer id, double preco, String quantidade, String nome, String categoria) {
+    public Mercadoria(Integer id, double preco, Integer quantidade, String nome, String categoria) {
         this.id = id;
         this.preco = preco;
         this.quantidade = quantidade;
@@ -50,11 +50,11 @@ public class Mercadoria {
         this.preco = preco;
     }
 
-    public String getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 
